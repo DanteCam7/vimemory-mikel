@@ -52,7 +52,7 @@
 .hero__visual > img { position: absolute; }
 
 .hero__leaves { width: 30%; left: 4%; top: 36%; }
-.hero__crowny { width: 40%; left: 30%; bottom: 47%; }
+.hero__crowny { position: absolute; width: 40%; left: 30%; bottom: 47%; }
 .hero__mug { width: 20%; right: 8%; bottom: 14%; }
 
 .hero__stack { position: absolute; width: 56%; left: 22%; bottom: 6%; container-type: inline-size; }

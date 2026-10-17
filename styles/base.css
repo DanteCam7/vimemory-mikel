@@ -200,6 +200,34 @@ figure { margin: 0; }
 
 .has-js .reveal.is-revealed { opacity: 1; transform: none; }
 
+.ervi-wrap { display: block; transform-origin: 50% 100%; }
+
+.ervi-wrap img { width: 100%; height: auto; }
+
+.ervi-wrap--land { animation: ervi-land 1.3s 0.3s both; }
+
+.has-js .is-revealed .ervi-wrap--glide { animation: ervi-glide 1.4s 0.3s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+.has-js .is-revealed .ervi-wrap--bow { animation: ervi-bow 1.8s 0.6s ease-in-out both; }
+
+@keyframes ervi-land {
+	0% { transform: translateY(-150%); animation-timing-function: cubic-bezier(0.3, 0.1, 0.3, 1); }
+	80% { transform: translateY(0) scale(1.02, 0.97); animation-timing-function: ease-out; }
+	100% { transform: none; }
+}
+
+@keyframes ervi-glide {
+	0% { transform: translateX(45%); }
+	80% { transform: translateX(0) rotate(-2deg); animation-timing-function: ease-in-out; }
+	100% { transform: none; }
+}
+
+@keyframes ervi-bow {
+	0% { transform: none; }
+	40%,
+	60% { transform: rotate(-6deg); }
+	100% { transform: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html { scroll-behavior: auto; }
 
@@ -210,4 +238,6 @@ figure { margin: 0; }
 	}
 
 	.has-js .reveal { opacity: 1; transform: none; }
+
+	.ervi-wrap { animation: none !important; }
 }

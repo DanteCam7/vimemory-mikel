@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Vimemory Mind Palace — resúmenes visuales, mnemotecnias y preguntas para estudiantes de medicina que preparan el ENARM.">
+	<title>Vimemory — Mind Palace</title>
+	<link rel="icon" type="image/png" href="assets/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/tokens.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/layout.css">
+	<link rel="stylesheet" href="styles/sections.css">
+	<script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+	<nav class="navbar" id="navbar">
+		<div class="container navbar__inner">
+			<a href="#inicio" class="brand">
+				<img src="assets/logo.png" alt="" class="brand__mark">
+				<span class="brand__text">
+					<span class="brand__name">Vimemory</span>
+					<span class="brand__tag">Mind Palace</span>
+				</span>
+			</a>
+			<ul class="navbar__links">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#temas">Temas</a></li>
+				<li><a href="#recursos">Recursos</a></li>
+				<li><a href="#planes">Planes</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+			<a href="#" class="btn btn--primary navbar__cta" data-app-link="/auth/login">Iniciar Sesión</a>
+			<button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+				aria-controls="drawer">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+		<div class="navbar__drawer" id="drawer" hidden>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#temas">Temas</a></li>
+				<li><a href="#recursos">Recursos</a></li>
+				<li><a href="#planes">Planes</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+				<li><a href="#" class="btn btn--primary" data-app-link="/auth/login">Iniciar Sesión</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<section class="hero" id="inicio">
+			<p class="hero__wordmark" aria-hidden="true">Vimemory</p>
+			<div class="container hero__inner">
+				<div class="hero__content">
+					<p class="section-label">Bienvenido a Vimemory</p>
+					<h1 class="hero__heading">Estudia medicina<br>con memoria,<br>entiende <em>para siempre.</em></h1>
+					<p class="hero__sub">
+						Resúmenes visuales, mnemotecnias y preguntas<br>
+						para que apruebes y seas el médico que sueñas.
+					</p>
+					<div class="hero__ctas">
+						<a href="#temas" class="btn btn--primary">Explorar Temas</a>
+						<a href="#como-funciona" class="btn btn--outline">
+							<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false">
+								<path d="M3 2l11 6-11 6z" fill="currentColor"/>
+							</svg>
+							Cómo funciona
+						</a>
+					</div>
+				</div>
+				<figure class="hero__figure">
+					<div class="hero__visual">
+						<img src="assets/illus/hero-hojas.svg" alt="" aria-hidden="true" class="hero__leaves">
+						<div class="hero__stack" aria-hidden="true">
+							<img src="assets/illus/hero-books.svg" alt="">
+							<span class="hero__spine hero__spine--1">Anatomía</span>
+							<span class="hero__spine hero__spine--2">Fisiología</span>
+							<span class="hero__spine hero__spine--3">Farmacología</span>
+							<span class="hero__spine hero__spine--4">Patología</span>
+						</div>
+						<img src="assets/crowny.png" alt="Ervi, la mascota de Vimemory, leyendo un libro de medicina"
+							class="hero__crowny">
+						<img src="assets/illus/hero-taza.svg" alt="" aria-hidden="true" class="hero__mug">
+					</div>
+					<div class="hero__badges" aria-hidden="true">
+						<img src="assets/illus/badge-cerebro.svg" alt="" class="hero__badge">
+						<img src="assets/illus/badge-latido.svg" alt="" class="hero__badge">
+						<img src="assets/illus/badge-adn.svg" alt="" class="hero__badge">
+					</div>
+					<figcaption class="vignette-caption">Ervi en la biblioteca</figcaption>
+				</figure>
+			</div>
+		</section>
+		<section class="features" id="como-funciona">
+			<div class="container">
+				<div class="features__gallery reveal">
+					<article class="feature">
+						<span class="vignette vignette--cool">
+							<img src="assets/illus/f-resumenes.svg" alt="" aria-hidden="true">
+						</span>
+						<h2 class="feature__title">Resúmenes Visuales</h2>
+						<p class="feature__desc">Mapas, esquemas y tablas claras.</p>
+					</article>
+					<article class="feature">
+						<span class="vignette vignette--warm">
+							<img src="assets/illus/f-mnemotecnias.svg" alt="" aria-hidden="true">
+						</span>
+						<h2 class="feature__title">Mnemotecnias</h2>
+						<p class="feature__desc">Técnicas de memoria que sí funcionan.</p>
+					</article>
+					<article class="feature">
+						<span class="vignette vignette--cool">
+							<img src="assets/illus/f-preguntas.svg" alt="" aria-hidden="true">
+						</span>
+						<h2 class="feature__title">Preguntas &amp; Tests</h2>
+						<p class="feature__desc">Practica y mide tu progreso.</p>
+					</article>
+					<article class="feature">
+						<span class="vignette vignette--cool">
+							<img src="assets/illus/f-progreso.svg" alt="" aria-hidden="true">
+						</span>
+						<h2 class="feature__title">Progreso Personal</h2>
+						<p class="feature__desc">Estadísticas y rachas de estudio.</p>
+					</article>
+				</div>
+				<div class="pager" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span></div>
+			</div>
+		</section>
+		<section class="section topics" id="temas">
+			<div class="container">
+				<div class="topics__head">
+					<p class="section-label">Temas Populares</p>
+					<a href="#" class="topics__all" data-app-link="/temas">Ver todos los temas →</a>
+				</div>
+				<div class="topics__grid reveal">
+					<article class="topic-card">
+						<span class="vignette vignette--frame"><img src="assets/illus/corazon.svg" alt="" aria-hidden="true" class="topic-card__illus"></span>
+						<h2 class="topic-card__name">Cardiología</h2>
+						<p class="topic-card__meta">Contenido en construcción</p>
+						<span class="topic-card__arrow" aria-hidden="true">→</span>
+					</article>
+					<article class="topic-card">
+						<span class="vignette vignette--frame"><img src="assets/illus/cerebro.svg" alt="" aria-hidden="true" class="topic-card__illus"></span>
+						<h2 class="topic-card__name">Neurología</h2>
+						<p class="topic-card__meta">Contenido en construcción</p>
+						<span class="topic-card__arrow" aria-hidden="true">→</span>
+					</article>
+					<article class="topic-card">
+						<span class="vignette vignette--frame"><img src="assets/illus/pulmones.svg" alt="" aria-hidden="true" class="topic-card__illus"></span>
+						<h2 class="topic-card__name">Neumología</h2>
+						<p class="topic-card__meta">Contenido en construcción</p>
+						<span class="topic-card__arrow" aria-hidden="true">→</span>
+					</article>
+					<article class="topic-card">
+						<span class="vignette vignette--frame"><img src="assets/illus/estomago.svg" alt="" aria-hidden="true" class="topic-card__illus"></span>
+						<h2 class="topic-card__name">Gastroenterología</h2>
+						<p class="topic-card__meta">Contenido en construcción</p>
+						<span class="topic-card__arrow" aria-hidden="true">→</span>
+					</article>
+					<article class="topic-card">
+						<span class="vignette vignette--frame"><img src="assets/illus/pastillas.svg" alt="" aria-hidden="true" class="topic-card__illus"></span>
+						<h2 class="topic-card__name">Farmacología</h2>
+						<p class="topic-card__meta">Contenido en construcción</p>
+						<span class="topic-card__arrow" aria-hidden="true">→</span>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="section resources" id="recursos">
+			<div class="container">
+				<p class="section-label">Recursos</p>
+				<h2 class="section-title">Todo lo que necesitas, en un solo lugar.</h2>
+				<div class="resources__grid reveal">
+					<article class="resource card">
+						<span class="resource__icon">
+							<img src="assets/illus/f-resumenes.svg" alt="" aria-hidden="true">
+						</span>
+						<h3 class="resource__title">Guías ENARM</h3>
+						<p class="resource__desc">Temario oficial desglosado por especialidad, con lo esencial de cada tema.</p>
+					</article>
+					<article class="resource card">
+						<span class="resource__icon">
+							<img src="assets/illus/f-mnemotecnias.svg" alt="" aria-hidden="true">
+						</span>
+						<h3 class="resource__title">Flashcards</h3>
+						<p class="resource__desc">Repaso espaciado para fijar lo que ya estudiaste.</p>
+					</article>
+					<article class="resource card">
+						<span class="resource__icon">
+							<img src="assets/illus/f-preguntas.svg" alt="" aria-hidden="true">
+						</span>
+						<h3 class="resource__title">Casos clínicos</h3>
+						<p class="resource__desc">Escenarios reales para aplicar el conocimiento bajo presión.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="section plans" id="planes">
+			<div class="container">
+				<p class="section-label">Planes</p>
+				<h2 class="section-title">Empieza gratis. Escala cuando estés listo.</h2>
+				<div class="plans__grid reveal">
+					<article class="plan-card card">
+						<h3 class="plan-card__name">Free</h3>
+						<p class="plan-card__price">Gratis</p>
+						<ul class="plan-card__features">
+							<li>Acceso a especialidades básicas</li>
+							<li>Un libro por especialidad</li>
+							<li>Modo estudio estándar</li>
+						</ul>
+						<a href="#" class="btn btn--outline" data-app-link="/auth/register">Crear cuenta</a>
+					</article>
+					<article class="plan-card plan-card--featured">
+						<h3 class="plan-card__name">Pro</h3>
+						<p class="plan-card__price">Próximamente</p>
+						<ul class="plan-card__features">
+							<li>Todas las especialidades</li>
+							<li>Biblioteca completa sin límites</li>
+							<li>Video e imágenes HD por página</li>
+							<li>Actualizaciones prioritarias</li>
+						</ul>
+						<button class="btn btn--primary" type="button" disabled>Disponible pronto</button>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="section about" id="nosotros">
+			<div class="container about__inner reveal">
+				<figure class="about__figure">
+					<span class="vignette vignette--sage about__vignette">
+						<img src="assets/crowny.png" alt="" aria-hidden="true" class="about__crowny">
+					</span>
+					<figcaption class="vignette-caption">Ervi, mascota de Vimemory</figcaption>
+				</figure>
+				<div>
+					<p class="section-label">Nosotros</p>
+					<h2 class="section-title">Detrás de Vimemory</h2>
+					<p class="section-subtitle about__text">
+						Nacimos de una frustración compartida: estudiar medicina se volvió leer miles de páginas que
+						se olvidan en semanas. Vimemory convierte ese temario en imágenes, historias y repasos que
+						la memoria sí retiene.
+					</p>
+					<ul class="about__values">
+						<li>Memoria, no memorización</li>
+						<li>Menos texto, más imagen</li>
+						<li>Hecho por y para estudiantes</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section section--dark testimonial">
+			<div class="container">
+				<figure class="testimonial__card reveal">
+					<img src="assets/illus/comillas.svg" alt="" aria-hidden="true" class="testimonial__quote-mark">
+					<div class="testimonial__body">
+						<blockquote class="testimonial__text">
+							Entiende, recuerda y aprueba.<br>Ese es el método Vimemory.
+						</blockquote>
+						<p class="testimonial__stars" aria-label="Cinco de cinco estrellas">
+							<span aria-hidden="true">★★★★★</span>
+						</p>
+						<figcaption class="testimonial__author">— Mind Palace</figcaption>
+					</div>
+					<span class="vignette vignette--cream testimonial__vignette" aria-hidden="true">
+						<img src="assets/crowny.png" alt="" class="testimonial__crowny">
+					</span>
+				</figure>
+			</div>
+		</section>
+		<section class="section section--dark contact" id="contacto">
+			<div class="container contact__inner reveal">
+				<div>
+					<p class="section-label">Contacto</p>
+					<h2 class="section-title">¿Tienes dudas? Escríbenos.</h2>
+					<p class="section-subtitle">
+						Cuéntanos qué necesitas y te respondemos por correo.
+					</p>
+				</div>
+				<form class="contact__form card" id="contact-form" novalidate>
+					<div class="field">
+						<label class="field__label" for="contact-name">Nombre</label>
+						<input class="field__input" id="contact-name" name="name" type="text" autocomplete="name" required>
+					</div>
+					<div class="field">
+						<label class="field__label" for="contact-email">Correo</label>
+						<input class="field__input" id="contact-email" name="email" type="email" autocomplete="email" required>
+					</div>
+					<div class="field">
+						<label class="field__label" for="contact-message">Mensaje</label>
+						<textarea class="field__textarea" id="contact-message" name="message" required></textarea>
+					</div>
+					<p class="field__error" id="contact-status" role="status" aria-live="polite"></p>
+					<button class="btn btn--primary" type="submit">Enviar mensaje</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__card reveal">
+				<div class="footer__brand">
+					<a href="#inicio" class="brand brand--dark footer__logo">
+						<img src="assets/logo.png" alt="" class="brand__mark">
+						<span class="brand__text">
+							<span class="brand__name">Vimemory</span>
+							<span class="brand__tag">Mind Palace</span>
+						</span>
+					</a>
+					<p class="footer__tagline">Tu mente es tu mejor herramienta. Entrénala.</p>
+					<ul class="footer__social">
+						<li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a></li>
+						<li><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.6 2.6 2.4 4.4 5 4.8"/></svg></a></li>
+						<li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a></li>
+						<li><a href="mailto:hola@vimemory.com" aria-label="Correo"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg></a></li>
+					</ul>
+				</div>
+				<div class="footer__news">
+					<h2 class="footer__news-title">Únete a la primera generación Vimemory</h2>
+					<p class="footer__news-sub">Recibe tips de estudio, recursos gratuitos y novedades.</p>
+					<form class="footer__form" id="newsletter-form" novalidate>
+						<label class="visually-hidden" for="newsletter-email">Tu correo electrónico</label>
+						<input class="field__input" id="newsletter-email" name="email" type="email"
+							placeholder="Tu correo electrónico" autocomplete="email" required>
+						<button class="btn btn--primary" type="submit">Suscribirme</button>
+					</form>
+					<p class="field__error" id="newsletter-status" role="status" aria-live="polite"></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="footer-bar">
+		<div class="container footer-bar__inner">
+			<ul class="footer-bar__links">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#temas">Temas</a></li>
+				<li><a href="#recursos">Recursos</a></li>
+				<li><a href="#planes">Planes</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+			<p class="footer-bar__copy">© 2026 Vimemory Mind Palace. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,10 +1,10 @@
 .hero { background: var(--cream-page); padding-bottom: var(--section-gap); overflow: clip; }
 
 .hero__wordmark {
-	margin: 0 -20vw;
+	margin: 0;
 	padding-top: 1.5vw;
 	font-family: var(--font-display);
-	font-size: 26vw;
+	font-size: 21vw;
 	font-weight: 500;
 	line-height: 0.8;
 	letter-spacing: -0.055em;
